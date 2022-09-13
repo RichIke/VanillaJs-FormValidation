@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Login & SignUp Form</title>
+</head>
+<body>
+    <div class="container">
+        <form action="" class="form" id="login">
+            <h1 class="form_title">Login</h1>
+        
+            <div class="form-control">
+                <label >Username or Email</label>       
+               <input type="text" id="username1" autofocus placeholder="blahblah4567">
+               <i class="fas fa-check-circle"></i>
+               <i class="fas fa-exclamation-circle"></i>
+               <small></small>
+            </div>
+
+            <div class="form-control">
+                <label >Password</label> 
+                <input type="password" id="password1" autofocus placeholder="password">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small></small>
+             </div>
+
+             <button class="form_button" type="submit">Continue</button>
+            <p class="form_text">
+                <a href="#" id="linkforgotPassword" class="form_link">Forgot your password?</a>
+            </p>
+            <p class="form_text">
+                <a href="#" id="linkCreateAccount" class="form_link">Don't have an account? Create account</a>
+            </p>
+
+        </form>
+
+        <form action="" class="form form-hidden" id="createAccount">
+            <h1 class="form_title">Create Account</h1>
+
+            <div class="form-control">
+                <label >Username</label>
+               <input type="text" id="username"  autofocus placeholder="Username">
+               <i class="fas fa-check-circle"></i>
+               <i class="fas fa-exclamation-circle"></i>
+               <small></small>
+            </div>
+
+            <div class="form-control">
+                <label >Email Address</label>
+                <input type="text" id="email"  autofocus placeholder="Email Address">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small></small>
+             </div>
+
+            <div class="form-control">
+                <label >Password</label>
+                <input type="password" id="password"  autofocus placeholder="Password">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small></small>
+             </div>
+
+             <div class="form-control">
+                <label >Confirm Password</label>
+                <input type="password" id="confirm-password"  autofocus placeholder="Confirm password">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small></small>
+             </div>
+
+             <button class="form_button" type="submit">Submit</button>
+            <p class="form_text">
+                <a href="#" id="linkLogin" class="form_link">Already have an account? Sign in</a>
+            </p>
+
+        </form>
+
+        <form action="" class="form form-hidden" id="forgotPassword">
+            <h1 class="form_title"> Forgot Password?</h1>
+            <p> Enter your email or username and we'll send you a link to recover your account.</p>
+            <div class="form-control">          
+                <input type="text" id="username1" autofocus placeholder="Username or Email">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small></small>
+             </div>
+             <button class="form_button" type="submit">Send Login Link</button>
+             <p class="form_text">
+                <a href="#" id="linkCreateAccount1" class="form_link">Create new account</a>
+            </p>
+
+        </form>
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
